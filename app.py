@@ -57,6 +57,8 @@ def incluir_novo_livro():
 
 
 # Excluir
+
+
 @app.route('/livros/<int:id>', methods=['DELETE'])
 def deletar_livro(id):
     for indice, livro in enumerate(livros):
